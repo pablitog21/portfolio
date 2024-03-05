@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Plantilla Básica Portafolio
 
-## Getting Started
+Esta es una pequeña plantilla para comenzar a trabajar con un portafolio básico.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Configuración básica lista para comenzar.
+- Estructura de carpetas organizada para un desarrollo escalable.
+- Integración con herramientas comunes como Babel y Webpack.
+- Soporte para CSS-in-JS mediante styled-components.
+- Configuración de ESLint y Prettier para mantener un código limpio y consistente.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Requisitos previos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Antes de comenzar a utilizar esta plantilla, asegúrate de tener instalado Node.js en tu sistema.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Cómo empezar
 
-## Learn More
+1. Clona este repositorio: `git clone <URL_del_repositorio>`
+2. Navega al directorio del proyecto: `cd nombre_del_proyecto`
+3. Instala las dependencias:
+   - Utilizando npm: `npm install`
+   - Utilizando yarn: `yarn install`
+   - Utilizando pnpm: `pnpm install`
+   - O utilizando cualquier otro empaquetador de tu preferencia.
+4. Inicia el servidor de desarrollo:
+   - Utilizando npm: `npm run dev`
+   - Utilizando yarn: `yarn dev`
+   - Utilizando pnpm: `pnpm dev`
+   - O utilizando cualquier otro comando específico del empaquetador que estés utilizando.
+5. Abre tu navegador y ve a [http://localhost:3000](http://localhost:3000) para ver la aplicación en funcionamiento.
 
-To learn more about Next.js, take a look at the following resources:
+¡Y eso es todo! Ahora puedes comenzar a desarrollar tu aplicación utilizando esta plantilla como base.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contribuciones
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Si encuentras algún error o tienes alguna mejora que sugerir, ¡no dudes en abrir un issue o enviar un pull request!
 
-## Deploy on Vercel
+## Licencia
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).

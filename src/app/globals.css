@@ -2,4 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Definición de variables CSS para el esquema de colores */
+:root {
+  --foreground-rgb: 0, 0, 0; /* Color del texto en formato RGB (negro predeterminado) */
+  --background-start-rgb: 214, 219, 220; /* Color de fondo inicial en formato RGB */
+  --background-end-rgb: 214, 219, 220; /* Color de fondo final en formato RGB */
+}
 
+/* Media query para el esquema de colores oscuros */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; /* Color del texto en formato RGB (blanco para esquema oscuro) */
+    --background-start-rgb: 0, 0, 0; /* Color de fondo inicial en formato RGB para esquema oscuro */
+    --background-end-rgb: 0, 0, 0; /* Color de fondo final en formato RGB para esquema oscuro */
+  }
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+  color: rgb(var(--foreground-rgb)); /* Color del texto */
+  background: linear-gradient( /* Degradado de fondo */
+      to bottom, /* Dirección del degradado */
+      transparent, /* Color transparente al principio */
+      rgb(var(--background-end-rgb)) /* Color de fondo final */
+    )
+    rgb(var(--background-start-rgb)); /* Color de fondo inicial */
+}
+
+/* Definición de estilos en la capa de utilidades */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance; /* Ajuste de texto para equilibrar líneas */
+  }
+}
