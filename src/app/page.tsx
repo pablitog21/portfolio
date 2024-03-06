@@ -1,6 +1,16 @@
+'use client'
 import Image from "next/image";
 
 export default function Home() {
+
+  const handleDownload = () => {
+    const downloadUrl = '/assets/doc/cvc.doc';
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.download = 'cvc.doc';
+    link.click();
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -30,6 +40,14 @@ export default function Home() {
         </p>
       </div>
 
+      <div className="mb-8 text-center">
+        <button
+          onClick={handleDownload}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          CVC
+        </button>
+      </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
         <a
