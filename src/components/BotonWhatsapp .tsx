@@ -6,7 +6,7 @@ const BotonWhatsapp = () => {
 
     const handleClick = () => {
 
-        const mensaje = encodeURIComponent('"¡Hola! Estoy muy bien, gracias por preguntar. Me gustaría adquirir tus servicios. ¿Podríamos programar una reunión para llegar a un acuerdo? ¡Gracias!"');
+        const mensaje = encodeURIComponent('Hola, ¿cómo estás? Me gustaría adquirir tus servicios. ¿Podríamos programar una reunión para llegar a un acuerdo? ¡Gracias!');
 
         const whatsappURL = `https://api.whatsapp.com/send?phone=573167251967&text=${mensaje}`;
 
