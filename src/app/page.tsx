@@ -1,4 +1,5 @@
 'use client'
+import BotonWhatsapp from "@/components/BotonWhatsapp ";
 import Image from "next/image";
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
           CVC
         </button>
       </div>
+      
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
         <a
@@ -134,6 +136,7 @@ export default function Home() {
           ></iframe>
         </div>
       </div> */}
+      <BotonWhatsapp/>
     </main>
   );
 }
