@@ -49,7 +49,6 @@ export default function Home() {
           CVC
         </button>
       </div>
-      
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
         <a
@@ -86,23 +85,6 @@ export default function Home() {
           </p>
         </a>
 
-        {/* <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a> */}
-
         <a
           href="https://www.linkedin.com/in/juan-david-mar%C3%ADn-zuluaica-5339a820b"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -119,10 +101,49 @@ export default function Home() {
             Mi perfil de Linkedin
           </p>
         </a>
-
       </div>
 
-      {/* <div className="mb-8 lg:max-w-3xl lg:w-full lg:mx-auto">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 p-8">
+        <div className="mb-8 text-center p-2 sm:p-4 transition-transform transform-gpu hover:scale-105">
+          <div className="inline-block bg-gray-50 p-2 sm:p-4 rounded-lg max-w-xs">
+            <div className="flex flex-col items-center">
+              <img
+                src="/assets/icons/two-icon.png"
+                alt="Descripción de la imagen"
+                className="w-auto h-auto"
+              />
+              <p className={`m-0 max-w-[30ch] text-sm `}>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates.        </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-8 text-center p-2 sm:p-4 transition-transform transform-gpu hover:scale-105">
+          <div className="inline-block bg-gray-50 p-2 sm:p-4 rounded-lg max-w-xs">
+            <div className="flex flex-col items-center">
+              <img
+                src="/assets/icons/two-icon.png"
+                alt="Descripción de la imagen"
+                className="w-auto h-auto"
+              />
+              <p className={`m-0 max-w-[30ch] text-sm`}>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <BotonWhatsapp />
+    </main>
+  );
+}
+{/* <div className="mb-8 lg:max-w-3xl lg:w-full lg:mx-auto">
         <div className="p-10 rounded-lg overflow-hidden">
           <iframe
             style={{ borderRadius: "0.5rem" }}
@@ -136,7 +157,3 @@ export default function Home() {
           ></iframe>
         </div>
       </div> */}
-      <BotonWhatsapp/>
-    </main>
-  );
-}
