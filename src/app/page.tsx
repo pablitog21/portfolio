@@ -1,4 +1,5 @@
 'use client'
+
 import BotonWhatsapp from "@/components/BotonWhatsapp ";
 import Image from "next/image";
 
@@ -103,43 +104,9 @@ export default function Home() {
         </a>
       </div>
 
-
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 p-8">
-        <div className="mb-8 text-center p-2 sm:p-4 transition-transform transform-gpu hover:scale-105">
-          <div className="inline-block bg-gray-50 dark:bg-gray-800 p-2 sm:p-4 rounded-lg max-w-xs">
-            <div className="flex flex-col items-center">
-              <img
-                src="/assets/icons/two-icon.png"
-                alt="Descripción de la imagen"
-                className="w-auto h-auto"
-              />
-              <p className={`m-0 max-w-[30ch] text-sm dark:text-white`}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mb-8 text-center p-2 sm:p-4 transition-transform transform-gpu hover:scale-105">
-          <div className="inline-block bg-gray-50 dark:bg-gray-800 p-2 sm:p-4 rounded-lg max-w-xs">
-            <div className="flex flex-col items-center">
-              <img
-                src="/assets/icons/two-icon.png"
-                alt="Descripción de la imagen"
-                className="w-auto h-auto"
-              />
-              <p className={`m-0 max-w-[30ch] text-sm dark:text-white`}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 p-8">
-  <div className="mb-8 text-center p-2 sm:p-4 transition-transform transform-gpu hover:scale-105">
-    <div className="inline-block bg-gray-50 dark:bg-gray-800 p-2 sm:p-4 rounded-lg max-w-xs">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 p-8">
+  <div className="mb-8 text-center p-2 sm:p-4 transition-transform transform-gpu hover:scale-105 sm:max-w-xs">
+    <div className="inline-block bg-gray-50 dark:bg-gray-800 p-2 sm:p-4 rounded-lg w-80 sm:w-full">
       <div className="flex flex-col items-center">
         <img
           src="/assets/icons/two-icon.png"
@@ -153,8 +120,8 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="mb-8 text-center p-2 sm:p-4 transition-transform transform-gpu hover:scale-105">
-    <div className="inline-block bg-gray-50 dark:bg-gray-800 p-2 sm:p-4 rounded-lg max-w-xs">
+  <div className="mb-8 text-center p-2 sm:p-4 transition-transform transform-gpu hover:scale-105 sm:max-w-xs">
+    <div className="inline-block bg-gray-50 dark:bg-gray-800 p-2 sm:p-4 rounded-lg w-80 sm:w-full">
       <div className="flex flex-col items-center">
         <img
           src="/assets/icons/two-icon.png"
@@ -171,11 +138,12 @@ export default function Home() {
 
 
 
-
       <BotonWhatsapp />
     </main>
   );
 }
+
+
 {/* <div className="mb-8 lg:max-w-3xl lg:w-full lg:mx-auto">
         <div className="p-10 rounded-lg overflow-hidden">
           <iframe
