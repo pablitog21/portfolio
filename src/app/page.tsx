@@ -28,9 +28,11 @@ export default function Home() {
         <img
           src="/assets/icons/four-icon.png"
           alt="One Icon"
-          className={`w-full h-full max-w-screen-sm ${hovered ? 'lg:max-w-lg' : 'lg:max-w-xl'
-            } transition-all duration-500 ease-in-out ${hovered ? 'scale-110' : 'scale-100'
-            }`}
+          className={`w-full h-full max-w-screen-sm ${
+            hovered ? 'lg:max-w-lg' : 'lg:max-w-xl'
+          } transition-all duration-500 ease-in-out ${
+            hovered ? 'scale-110' : 'scale-100'
+          }`}
         />
       </div>
 
