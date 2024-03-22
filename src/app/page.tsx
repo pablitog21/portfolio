@@ -16,18 +16,10 @@ export default function Home() {
     link.click();
   };
 
-  const handleHover = () => {
-    setHovered(true);
-  };
-
-  const handleLeave = () => {
-    setHovered(false);
-  };
-
   return (
     <main className="flex flex-col min-h-screen p-8 lg:p-24">
       <div className="max-w-5xl mx-auto mb-8 lg:flex lg:justify-between lg:items-center">
-        <p className="fixed top-0 left-0 w-full py-8 text-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-lg dark:border-neutral-800 dark:bg-zinc-800/30 lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+        <p className="fixed top-0 left-0 w-full py-8 text-center border-b lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Mi Portafolio
         </p>
       </div>
@@ -36,11 +28,9 @@ export default function Home() {
         <img
           src="/assets/icons/four-icon.png"
           alt="One Icon"
-          className={`w-full h-full max-w-screen-sm ${
-            hovered ? 'lg:max-w-lg' : 'lg:max-w-xl'
-          } transition-all duration-500 ease-in-out ${
-            hovered ? 'scale-110' : 'scale-100'
-          }`}
+          className={`w-full h-full max-w-screen-sm ${hovered ? 'lg:max-w-lg' : 'lg:max-w-xl'
+            } transition-all duration-500 ease-in-out ${hovered ? 'scale-110' : 'scale-100'
+            }`}
         />
       </div>
 
