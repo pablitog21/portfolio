@@ -41,8 +41,6 @@ export default function Home() {
           } transition-all duration-500 ease-in-out ${
             hovered ? 'scale-110' : 'scale-100'
           }`}
-          onMouseEnter={handleHover}
-          onMouseLeave={handleLeave}
         />
       </div>
 
@@ -53,7 +51,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 p-8">
         <button
           onClick={handleDownload}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -62,7 +60,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
+      <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left p-8">
         <a
           href="https://github.com/pablitog21"
           className="group block px-5 py-4 border rounded-lg transition-colors hover:bg-gray-100 hover:border-gray-300 hover:dark:bg-neutral-800/30 hover:dark:border-neutral-700"
