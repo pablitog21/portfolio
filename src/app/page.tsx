@@ -19,26 +19,25 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen p-8 lg:p-24">
       <div className="max-w-5xl mx-auto mb-8 lg:flex lg:justify-between lg:items-center">
-        <p className="fixed top-0 left-0 w-full py-8 text-center border-b lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+        <p className="sticky top-0 left-0 w-full py-8 text-center border-b lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Mi Portafolio
         </p>
       </div>
+
 
       <div className="relative flex justify-center mb-8 lg:mb-0">
         <img
           src="/assets/icons/four-icon.png"
           alt="One Icon"
-          className={`w-full h-full max-w-screen-sm ${
-            hovered ? 'lg:max-w-lg' : 'lg:max-w-xl'
-          } transition-all duration-500 ease-in-out ${
-            hovered ? 'scale-110' : 'scale-100'
-          }`}
+          className={`w-full h-full max-w-screen-sm ${hovered ? 'lg:max-w-lg' : 'lg:max-w-xl'
+            } transition-all duration-500 ease-in-out ${hovered ? 'scale-110' : 'scale-100'
+            }`}
         />
       </div>
 
-      <div className="text-center lg:text-left">
-        <p className="text-lg font-semibold mb-4">¡Hola! ¡Soy Juan David Marin Zuluaica!</p>
-        <p className="text-sm text-gray-500 leading-relaxed">
+      <div className="lg:text-left">
+        <p className="text-lg font-semibold mb-4 text-center">¡Hola! ¡Soy Juan David Marin Zuluaica!</p>
+        <p className="text-sm text-gray-500 leading-relaxed text-center">
           Me encanta trabajar en proyectos emocionantes y aprender nuevas tecnologías. En mi tiempo libre, disfruto explorar las últimas tendencias en desarrollo de software y participar en comunidades de programación. También me apasiona compartir conocimientos y ayudar a otros desarrolladores a crecer en sus habilidades. Siempre estoy buscando nuevas oportunidades para colaborar en proyectos innovadores y desafiantes.
         </p>
       </div>
@@ -101,6 +100,8 @@ export default function Home() {
           />
           <p className="mt-4 text-base dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates.</p>
         </div>
+
+
       </div>
     </main>
   );
