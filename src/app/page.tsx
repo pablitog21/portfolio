@@ -138,7 +138,7 @@ export default function Home() {
               alt={image.title}
               className="w-20 h-20 sm:w-auto sm:h-auto"
             />
-            <p className="mt-4 text-base dark:text-white">{image.title}</p>
+            <p className="mt-4 text-base dark:text-white font-semibold">{image.title}</p>
           </div>
         ))}
       </div>
