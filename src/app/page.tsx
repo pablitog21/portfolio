@@ -1,4 +1,5 @@
 'use client'
+import { ImageData, imageData } from "@/    constants";
 import BotonWhatsapp from "@/components/BotonWhatsapp ";
 import Image from "next/image";
 
@@ -84,25 +85,19 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        <div className="text-center bg-gray-50 dark:bg-gray-800 p-6 rounded-lg w-full max-w-[90vw] sm:max-w-md mx-auto">
-          <img
-            src="/assets/icons/two-icon.png"
-            alt="Descripción de la imagen"
-            className="w-20 h-20 sm:w-auto sm:h-auto"
-          />
-          <p className="mt-4 text-base dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates.</p>
-        </div>
-        <div className="text-center bg-gray-50 dark:bg-gray-800 p-6 rounded-lg w-full max-w-[90vw] sm:max-w-md mx-auto">
-          <img
-            src="/assets/icons/two-icon.png"
-            alt="Descripción de la imagen"
-            className="w-20 h-20 sm:w-auto sm:h-auto"
-          />
-          <p className="mt-4 text-base dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates.</p>
-        </div>
-
-
+        {/* Mapear cada imagen en la lista de imageData */}
+        {imageData.map((image: ImageData) => (
+          <div key={image.id} className="text-center bg-gray-50 dark:bg-gray-800 p-6 rounded-lg w-full max-w-[90vw] sm:max-w-md mx-auto">
+            <img
+              src={image.src}
+              alt={image.text}
+              className="w-20 h-20 sm:w-auto sm:h-auto"
+            />
+            <p className="mt-4 text-base dark:text-white">{image.text}</p>
+          </div>
+        ))}
       </div>
+
     </main>
   );
 }
