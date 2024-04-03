@@ -90,58 +90,59 @@ export default function Home() {
         </a>
       </div>
 
-      {/* Modal de imagen */}
-      {selectedImage !== null && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50" onClick={handleCloseModal}>
-          <div className="text-center bg-gray-50 dark:bg-gray-800 p-6 rounded-lg max-w-[90vw] sm:max-w-md mx-auto relative">
-            <button
-              className="absolute top-0 right-0 p-2"
-              onClick={handleCloseModal}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-            <img
-              src={imageData[selectedImage].src}
-              alt={imageData[selectedImage].text}
-              className="w-20 h-20 sm:w-auto sm:h-auto"
-            />
-            <p className="mt-4 text-base dark:text-white">
-              {imageData[selectedImage].text}
-            </p>
-          </div>
-        </div>
-      )}
+     {/* Modal de imagen */}
+{selectedImage !== null && (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50" onClick={handleCloseModal}>
+    <div className="text-center bg-gray-50 dark:bg-gray-800 p-6 rounded-lg max-w-[80vw] sm:max-w-md mx-auto relative">
+      <button
+        className="absolute top-0 right-0 p-2"
+        onClick={handleCloseModal}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6 text-gray-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <img
+        src={imageData[selectedImage].src}
+        alt={imageData[selectedImage].text}
+        className="w-20 h-20 sm:w-auto sm:h-auto"
+      />
+      <p className="mt-4 text-base dark:text-white">
+        {imageData[selectedImage].text}
+      </p>
+    </div>
+  </div>
+)}
 
-      {/* Grid de imágenes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {imageData.map((image: ImageData, index: number) => (
-          <div
-            key={image.id}
-            className="text-center bg-gray-50 dark:bg-gray-800 p-6 rounded-lg w-full max-w-[90vw] sm:max-w-md mx-auto cursor-pointer relative"
-            onClick={() => handleClick(index)}
-          >
-            <img
-              src={image.src}
-              alt={image.title}
-              className="w-20 h-20 sm:w-auto sm:h-auto"
-            />
-            <p className="mt-4 text-base dark:text-white font-semibold">{image.title}</p>
-          </div>
-        ))}
-      </div>
+{/* Grid de imágenes */}
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+  {imageData.map((image: ImageData, index: number) => (
+    <div
+      key={image.id}
+      className="text-center bg-gray-50 dark:bg-gray-800 p-6 rounded-lg w-full max-w-[90vw] sm:max-w-md mx-auto cursor-pointer relative"
+      onClick={() => handleClick(index)}
+    >
+      <img
+        src={image.src}
+        alt={image.title}
+        className="w-20 h-20 sm:w-auto sm:h-auto"
+      />
+      <p className="mt-4 text-base dark:text-white font-semibold">{image.title}</p>
+    </div>
+  ))}
+</div>
+
 
     </main>
   );
