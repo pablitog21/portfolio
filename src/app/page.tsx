@@ -135,7 +135,7 @@ export default function Home() {
         {imageData.map((image: ImageData, index: number) => (
           <div
             key={image.id}
-            className="text-center bg-gray-50 dark:bg-gray-800 p-4 rounded-lg w-full max-w-[90vw] sm:max-w-md mx-auto cursor-pointer relative"
+            className="text-center bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors p-4 rounded-lg w-full max-w-[90vw] sm:max-w-md mx-auto cursor-pointer relative"
             onClick={() => handleClick(index)}
           >
             <img
