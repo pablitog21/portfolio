@@ -8,8 +8,8 @@ export interface ImageData{
 export const imageData: ImageData[] = [
     {
         id: 1,
-        src: "/assets/icons/one-icon.png",
-        title: "Texto de prueba",
+        src: "/assets/image/SGSST.png",
+        title: "Sistema de Gestion de Seguridad y salud en el Trabajo.",
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates."
     },
     {
