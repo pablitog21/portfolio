@@ -37,16 +37,16 @@ export default function Home() {
 
       <div className="relative flex justify-center mb-8 lg:mb-0">
         <img
-          src="/assets/icons/four-icon.png"
+          src="/assets/image/foto.png"
           alt="One Icon"
-          className="w-full h-full max-w-screen-sm"
+          className="w-80 h-90 max-w-screen-sm "
         />
       </div>
 
       <div className="lg:text-left">
         <p className="text-lg font-semibold mb-4 text-center">¡Hola! ¡Soy Juan David Marin Zuluaica!</p>
         <p className="text-sm text-gray-500 leading-relaxed text-center">
-          Me encanta trabajar en proyectos emocionantes y aprender nuevas tecnologías. En mi tiempo libre, disfruto explorar las últimas tendencias en desarrollo de software y participar en comunidades de programación. También me apasiona compartir conocimientos y ayudar a otros desarrolladores a crecer en sus habilidades. Siempre estoy buscando nuevas oportunidades para colaborar en proyectos innovadores y desafiantes.
+        Me encanta trabajar en proyectos emocionantes y aprender nuevas tecnologías. En mi tiempo libre, disfruto leyendo noticias sobre el mundo tecnológico y participando en comunidades de programación. También me apasiona compartir conocimientos y ayudar a otros desarrolladores a crecer en sus habilidades. Siempre estoy en busca de nuevas oportunidades para colaborar en proyectos innovadores y desafiantes.
         </p>
       </div>
 
