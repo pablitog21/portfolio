@@ -5,29 +5,45 @@ export interface ImageData{
     text: string;
 }
 
+export interface ContacData {
+    id: number;
+    href: string;
+    title: string;
+    text: string;
+}
+
 export const imageData: ImageData[] = [
     {
         id: 1,
         src: "/assets/image/SGSST.png",
         title: "Sistema de Gestion de Seguridad y Salud en el Trabajo.",
-        text: "SGSST (Sistema de Gestión de Seguridad y Salud en el Trabajo) fue un proyecto desarrollado durante un curso realizado por la Fundación View en alianza con Comfenalco Antioquia."
+        text: "El SGSST (Sistema de Gestión de Seguridad y Salud en el Trabajo) fue un proyecto desarrollado durante un curso llevado a cabo por la Fundación View en colaboración con Comfenalco Antioquia."
     },
     {
         id: 2,
-        src: "/assets/icons/two-icon.png",
-        title: "Texto de prueba",
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates."
+        src: "/assets/image/WORIN.png",
+        title: "WORIN",
+        text: "WORIN fue un proyecto desarrollado durante un programa tecnológico llevado a cabo por el SENA."
+    }
+]
+
+export const contacData: ContacData[] = [
+    {
+        id: 1,
+        href: "https://github.com/pablitog21",
+        title: "GitHub<",
+        text: "Mi perfil de GitHub"
     },
     {
-        id: 3,
-        src: "/assets/icons/three-icon.png",
-        title: "Texto de prueba",
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates."
+        id: 2,
+        href: "https://www.instagram.com/pablitog_21",
+        title: "Instagram",
+        text: "Mi perfil de Instagram"
     },
     {
-        id: 4,
-        src: "/assets/icons/four-icon.png",
-        title: "Texto de prueba",
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum dolorum impedit doloremque libero repellendus ad rem excepturi quae fugiat ea nihil atque accusantium placeat et doloribus in! Dolorem, voluptates."
+        id: 2,
+        href: "https://www.linkedin.com/in/juan-david-mar%C3%ADn-zuluaica-5339a820b",
+        title: "LinkedIn",
+        text: "Mi perfil de LinkedIn<"
     }
 ]

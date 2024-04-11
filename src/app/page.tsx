@@ -1,7 +1,7 @@
 'use client'
 
 
-import { ImageData, imageData } from "@/    constants";
+import { ContacData, ImageData, contacData, imageData } from "@/    constants";
 import BotonWhatsapp from "@/components/BotonWhatsapp ";
 import Footer from "@/components/Footer";
 import { useState } from 'react';
@@ -10,7 +10,7 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const handleDownload = () => {
-    const downloadUrl = '/assets/doc/cvc.doc';
+    const downloadUrl = '/assets/doc/cvc.pdf';
     const link = document.createElement('a');
     link.href = downloadUrl;
     link.download = 'cvc.doc';
@@ -37,16 +37,16 @@ export default function Home() {
 
       <div className="relative flex justify-center mb-8 lg:mb-0">
         <img
-          src="/assets/icons/four-icon.png"
+          src="/assets/image/foto.png"
           alt="One Icon"
-          className="w-full h-full max-w-screen-sm"
+          className="w-80 h-90 max-w-screen-sm "
         />
       </div>
 
       <div className="lg:text-left">
         <p className="text-lg font-semibold mb-4 text-center">¡Hola! ¡Soy Juan David Marin Zuluaica!</p>
         <p className="text-sm text-gray-500 leading-relaxed text-center">
-          Me encanta trabajar en proyectos emocionantes y aprender nuevas tecnologías. En mi tiempo libre, disfruto explorar las últimas tendencias en desarrollo de software y participar en comunidades de programación. También me apasiona compartir conocimientos y ayudar a otros desarrolladores a crecer en sus habilidades. Siempre estoy buscando nuevas oportunidades para colaborar en proyectos innovadores y desafiantes.
+          Me encanta trabajar en proyectos emocionantes y aprender nuevas tecnologías. En mi tiempo libre, disfruto leyendo noticias sobre el mundo tecnológico y participando en comunidades de programación. También me apasiona compartir conocimientos y ayudar a otros desarrolladores a crecer en sus habilidades. Siempre estoy en busca de nuevas oportunidades para colaborar en proyectos innovadores y desafiantes.
         </p>
       </div>
 
@@ -59,36 +59,19 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left p-8">
-        <a
-          href="https://github.com/pablitog21"
-          className="group block px-5 py-4 border rounded-lg transition-colors hover:bg-gray-100 hover:border-gray-300 hover:dark:bg-neutral-800/30 hover:dark:border-neutral-700"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="text-2xl font-semibold mb-2">GitHub</h2>
-          <p className="text-sm opacity-50">Mi perfil de GitHub</p>
-        </a>
-
-        <a
-          href="https://www.instagram.com/pablitog_21"
-          className="group block px-5 py-4 border rounded-lg transition-colors hover:bg-gray-100 hover:border-gray-300 hover:dark:bg-neutral-800/30 hover:dark:border-neutral-700"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="text-2xl font-semibold mb-2">Instagram</h2>
-          <p className="text-sm opacity-50">Mi perfil de Instagram</p>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/juan-david-mar%C3%ADn-zuluaica-5339a820b"
-          className="group block px-5 py-4 border rounded-lg transition-colors hover:bg-gray-100 hover:border-gray-300 hover:dark:bg-neutral-800/30 hover:dark:border-neutral-700"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="text-2xl font-semibold mb-2">LinkedIn</h2>
-          <p className="text-sm opacity-50">Mi perfil de LinkedIn</p>
-        </a>
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:text-left p-8">
+        {contacData.map((contact: ContacData) => (
+          <a
+            key={contact.id}
+            href={contact.href}
+            className="group block px-5 py-4 border rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className="text-2xl font-semibold mb-2">{contact.title}</h2>
+            <p className="text-sm opacity-50">{contact.text}</p>
+          </a>
+        ))}
       </div>
 
       {/* Modal de imagen */}
