@@ -54,11 +54,11 @@ export default function Home() {
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
-          <a href="/stack">Stack</a>
+          <a href="/stack">Mi Stack</a>
         </button>
       </div>
 
-      <div className="text-center mb-8 p-8">
+      <div className="text-center mb-8 p-0">
         <button
           onClick={handleDownload}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
