@@ -1,7 +1,7 @@
 'use client'
 
 
-import { ContacData, ImageData, contacData, imageData } from "@/    constants";
+import { ContacData, ImageData, contacData, imageData } from "@/constants";
 import BotonWhatsapp from "@/components/BotonWhatsapp ";
 import Footer from "@/components/Footer";
 import { useState } from 'react';
@@ -48,6 +48,14 @@ export default function Home() {
         <p className="text-sm text-gray-500 leading-relaxed text-center">
           Me encanta trabajar en proyectos emocionantes y aprender nuevas tecnologías. En mi tiempo libre, disfruto leyendo noticias sobre el mundo tecnológico y participando en comunidades de programación. También me apasiona compartir conocimientos y ayudar a otros desarrolladores a crecer en sus habilidades. Siempre estoy en busca de nuevas oportunidades para colaborar en proyectos innovadores y desafiantes.
         </p>
+      </div>
+
+      <div className="text-center mb-8 p-8">
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          <a href="/stack">Stack</a>
+        </button>
       </div>
 
       <div className="text-center mb-8 p-8">

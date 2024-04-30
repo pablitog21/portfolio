@@ -1,4 +1,4 @@
-export interface ImageData{
+export interface ImageData {
     id: number;
     src: string;
     title: string;
@@ -10,6 +10,12 @@ export interface ContacData {
     href: string;
     title: string;
     text: string;
+}
+
+export interface StackData {
+    id: number;
+    src: string;
+    description: string;
 }
 
 export const imageData: ImageData[] = [
@@ -31,7 +37,7 @@ export const contacData: ContacData[] = [
     {
         id: 1,
         href: "https://github.com/pablitog21",
-        title: "GitHub<",
+        title: "GitHub",
         text: "Mi perfil de GitHub"
     },
     {
@@ -45,5 +51,28 @@ export const contacData: ContacData[] = [
         href: "https://www.linkedin.com/in/juan-david-mar%C3%ADn-zuluaica-5339a820b",
         title: "LinkedIn",
         text: "Mi perfil de LinkedIn<"
+    }
+]
+
+export const stackData: StackData[] = [
+    {
+        id: 1,
+        src: "/assets/image/angular.png",
+        description: "Angular"
+    },
+    {
+        id: 2,
+        src: "/assets/image/nextjs.png",
+        description: "NextJs"
+    },
+    {
+        id: 3,
+        src: "/assets/image/spring-boot.png",
+        description: "Spring Boot"
+    },
+    {
+        id: 4,
+        src: "/assets/image/postgresql.png",
+        description: "PostgreSQL"
     }
 ]
