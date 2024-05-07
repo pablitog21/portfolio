@@ -4,11 +4,11 @@ import { stackData } from '@/constants';
 const Imagen = () => {
   return (
     <div>
-      <div className="text-start mb-8 p-8">
+      <div className="text-center mb-8 p-8">
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
-          <a href="/">Inicio</a>
+          <a href="/">Volver al Inicio</a>
         </button>
       </div>
 
@@ -16,9 +16,9 @@ const Imagen = () => {
         {stackData.map(image => (
           <div
             key={image.id}
-            className="bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors p-4 rounded-lg w-full max-w-[90vw] sm:max-w-md mx-auto cursor-pointer"
+            className="bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors p-4 rounded-lg w-full max-w-[90vw] sm:max-w-2xl mx-auto cursor-pointer"
           >
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row items-center justify-between">
               <img
                 key={image.id}
                 src={image.src}
@@ -26,16 +26,14 @@ const Imagen = () => {
                 className="max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg mx-4 my-4"
                 style={{ width: '200px', height: 'auto' }}
               />
-              <p className="text-sm font-semibold">{image.description}</p>
+              <p className="text-sm font-semibold sm:ml-4">{image.description}</p>
             </div>
           </div>
         ))}
       </div>
-
-
     </div>
-
   );
 };
 
 export default Imagen;
+

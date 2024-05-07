@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container mx-auto flex justify-center items-center">
                 <div className="grid grid-cols-2 gap-8">
                     <div className="flex flex-col items-center mb-2">
-                        <a>Contáctanos</a>
+                        <a>Contáctame</a>
                         <p className="text-sm">Email: example@example.com</p>
                     </div>
                     <div className="flex flex-col items-center mb-2">

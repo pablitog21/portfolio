@@ -15,6 +15,7 @@ export interface ContacData {
 export interface StackData {
     id: number;
     src: string;
+    title: string;
     description: string;
 }
 
@@ -58,21 +59,31 @@ export const stackData: StackData[] = [
     {
         id: 1,
         src: "/assets/image/angular.png",
-        description: "Angular"
+        title: "Angular",
+        description: "Tengo experiencia sólida en Angular y su integración con herramientas como Tailwind y Trasloco."
     },
     {
         id: 2,
         src: "/assets/image/nextjs.png",
-        description: "NextJs"
+        title: "NextJs",
+        description: "Tengo sólidas bases en Next.js y estoy listo para aplicarlas en proyectos."
     },
     {
         id: 3,
         src: "/assets/image/spring-boot.png",
-        description: "Spring Boot"
+        title: "Spring Boot",
+        description: "Tengo buenas bases en Spring Boot, lo que me permite desarrollar aplicaciones Java de manera eficiente."
     },
     {
         id: 4,
         src: "/assets/image/postgresql.png",
-        description: "PostgreSQL"
+        title: "PostgreSQL",
+        description: "Tengo sólidas bases en PostgreSQL, desde la instalación hasta consultas avanzadas y optimización de rendimiento."
+    },
+    {
+        id: 5,
+        src: "/assets/image/ionic.png",
+        title: "PostgreSQL",
+        description: "Tengo sólidas bases en Ionic. Estoy listo para aplicar mis conocimientos en proyectos."
     }
 ]
