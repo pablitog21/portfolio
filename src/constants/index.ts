@@ -51,7 +51,7 @@ export const contacData: ContacData[] = [
         id: 2,
         href: "https://www.linkedin.com/in/juan-david-mar%C3%ADn-zuluaica-5339a820b",
         title: "LinkedIn",
-        text: "Mi perfil de LinkedIn<"
+        text: "Mi perfil de LinkedIn"
     }
 ]
 
