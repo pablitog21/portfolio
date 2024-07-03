@@ -8,7 +8,7 @@ const BotonWhatsapp = () => {
 
         const mensaje = encodeURIComponent('Hola, ¿cómo estás? Me gustaría adquirir tus servicios. ¿Podríamos programar una reunión para llegar a un acuerdo? ¡Gracias!');
 
-        const whatsappURL = `https://api.whatsapp.com/send?phone=573167251967&text=${mensaje}`;
+        const whatsappURL = `https://api.whatsapp.com/send?phone=570000000000&text=${mensaje}`;
 
         window.open(whatsappURL, '_blank');
     };
