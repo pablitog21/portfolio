@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8"> {/* Cambio a grid responsivo */}
                     <div className="flex flex-col items-center mb-2">
                         <a>Contáctame</a>
-                        <p className="text-sm">juandavid.pablitogame@gmail.com</p>
+                        <p className="text-sm">juandavid.2035@gmail.com</p>
                     </div>
                     <div className="flex flex-col items-center mb-2">
                         <a>Síguenos en</a>

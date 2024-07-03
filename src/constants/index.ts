@@ -41,12 +41,12 @@ export const contacData: ContacData[] = [
         title: "GitHub",
         text: "Mi perfil de GitHub"
     },
-    {
-        id: 2,
-        href: "https://www.instagram.com/pablitog_21",
-        title: "Instagram",
-        text: "Mi perfil de Instagram"
-    },
+    // {
+    //     id: 2,
+    //     href: "https://www.instagram.com/pablitog_21",
+    //     title: "Instagram",
+    //     text: "Mi perfil de Instagram"
+    // },
     {
         id: 2,
         href: "https://www.linkedin.com/in/juan-david-mar%C3%ADn-zuluaica-5339a820b",

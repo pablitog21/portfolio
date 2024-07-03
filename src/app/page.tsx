@@ -67,7 +67,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:text-left p-8">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:text-center p-8">
         {contacData.map((contact: ContacData) => (
           <a
             key={contact.id}
