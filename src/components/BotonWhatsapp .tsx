@@ -3,14 +3,23 @@
 import React, { useState } from 'react';
 
 const BotonWhatsapp = () => {
-
     const handleClick = () => {
+        const nombre = prompt('Hola, por favor dijita tu nombre:');
 
-        const mensaje = encodeURIComponent('Hola, ¿cómo estás? Me gustaría adquirir tus servicios. ¿Podríamos programar una reunión para llegar a un acuerdo? ¡Gracias!');
+        if (nombre) {
+            if (nombre.length > 150) {
+                alert('El nombre no puede exceder los 150 caracteres.');
+            } else {
+                const mensaje = `Hola, ¿cómo estás? Me gustaría adquirir tus servicios. ¿Podríamos programar una reunión para llegar a un acuerdo? ¡Gracias! Atentamente: ${nombre}.`;
+                const mensajeCodificado = encodeURIComponent(mensaje);
 
-        const whatsappURL = `https://api.whatsapp.com/send?phone=570000000000&text=${mensaje}`;
+                const whatsappURL = `https://api.whatsapp.com/send?phone=570000000000&text=${mensajeCodificado}`;
 
-        window.open(whatsappURL, '_blank');
+                window.open(whatsappURL, '_blank');
+            }
+        } else {
+            alert('No se ingresó ningún nombre.');
+        }
     };
 
     return (
@@ -23,5 +32,6 @@ const BotonWhatsapp = () => {
         />
     );
 };
+
 
 export default BotonWhatsapp;
