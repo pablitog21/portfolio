@@ -64,12 +64,12 @@ export default function Home() {
       </div>
 
       <div className="text-center mb-8">
-        {/* <button
+        <button
           onClick={handleDownload}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           Descarga mi CVC
-        </button> */}
+        </button>
       </div>
 
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:text-center p-8">
