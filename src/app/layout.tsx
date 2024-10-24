@@ -17,10 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-y-scroll overflow-x-scroll`}>
+      <body
+        className={`${inter.className} overflow-y-scroll overflow-x-scroll`}
+      >
         {children}
-        <BotonWhatsapp/>
-        </body>
+        <BotonWhatsapp />
+      </body>
     </html>
   );
 }

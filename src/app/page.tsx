@@ -1,19 +1,18 @@
-'use client'
-
+"use client";
 
 import { ContacData, ImageData, contacData, imageData } from "@/constants";
 import BotonWhatsapp from "@/components/BotonWhatsapp ";
 import Footer from "@/components/Footer";
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const handleDownload = () => {
-    const downloadUrl = '/assets/doc/cvc.pdf';
-    const link = document.createElement('a');
+    const downloadUrl = "/assets/doc/cvc.pdf";
+    const link = document.createElement("a");
     link.href = downloadUrl;
-    link.download = 'cvc.doc';
+    link.download = "cvc.doc";
     link.click();
   };
 
@@ -44,27 +43,33 @@ export default function Home() {
       </div>
 
       <div className="lg:text-left">
-        <p className="text-lg font-semibold mb-4 text-center">¡Hola! ¡Soy Juan David Marin Zuluaica! (Pablito)</p>
+        <p className="text-lg font-semibold mb-4 text-center">
+          ¡Hola! ¡Soy Juan David Marin Zuluaica! (Pablito)
+        </p>
         <p className="text-sm text-gray-500 leading-relaxed text-center">
-          Me encanta trabajar en proyectos emocionantes y aprender nuevas tecnologías. En mi tiempo libre, disfruto leyendo noticias sobre el mundo tecnológico y participando en comunidades de programación. También me apasiona compartir conocimientos y ayudar a otros desarrolladores a crecer en sus habilidades. Siempre estoy en busca de nuevas oportunidades para colaborar en proyectos innovadores y desafiantes.
+          Me encanta trabajar en proyectos emocionantes y aprender nuevas
+          tecnologías. En mi tiempo libre, disfruto leyendo noticias sobre el
+          mundo tecnológico y participando en comunidades de programación.
+          También me apasiona compartir conocimientos y ayudar a otros
+          desarrolladores a crecer en sus habilidades. Siempre estoy en busca de
+          nuevas oportunidades para colaborar en proyectos innovadores y
+          desafiantes.
         </p>
       </div>
 
       <div className="text-center mb-8 p-6">
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           <a href="/stack">Mi Stack</a>
         </button>
       </div>
 
       <div className="text-center mb-8">
-        <button
+        {/* <button
           onClick={handleDownload}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           Descarga mi CVC
-        </button>
+        </button> */}
       </div>
 
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:text-center p-8">
@@ -84,7 +89,10 @@ export default function Home() {
 
       {/* Modal de imagen */}
       {selectedImage !== null && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50" onClick={handleCloseModal}>
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50"
+          onClick={handleCloseModal}
+        >
           <div className="relative text-center bg-gray-50 dark:bg-gray-800 p-4 rounded-lg max-w-[90vw] sm:max-w-md mx-auto flex flex-col">
             <button
               className="absolute top-0 right-0 mt-2 mr-2 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
@@ -134,7 +142,9 @@ export default function Home() {
               alt={image.title}
               className="w-20 h-20 sm:w-auto sm:h-auto"
             />
-            <p className="mt-2 text-sm dark:text-white font-semibold">{image.title}</p>
+            <p className="mt-2 text-sm dark:text-white font-semibold">
+              {image.title}
+            </p>
           </div>
         ))}
       </div>
@@ -143,4 +153,3 @@ export default function Home() {
     </main>
   );
 }
-
