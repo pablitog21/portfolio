@@ -16,8 +16,7 @@ const BotonWhatsapp = () => {
     if (nombre.length > 150) {
       alert("El nombre no puede exceder los 150 caracteres.");
     } else {
-      const mensaje = `Hola, ¿cómo estás? Me gustaría adquirir tus servicios.
-              ¿Podríamos conversar para llegar a un acuerdo? ¡Gracias! Atentamente: ${nombre}.`;
+      const mensaje = `Hola, ¿cómo estás? Me gustaría adquirir tus servicios. ¿Podríamos conversar para llegar a un acuerdo? ¡Gracias! Atentamente: ${nombre}.`;
       const mensajeCodificado = encodeURIComponent(mensaje);
       const whatsappURL = `https://api.whatsapp.com/send?phone=573008259490&text=${mensajeCodificado}`;
 
